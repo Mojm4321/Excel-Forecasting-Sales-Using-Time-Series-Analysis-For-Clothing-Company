@@ -26,14 +26,30 @@ To track both the year and month, the axis label range is selected to include bo
 
 Diagram 3
 
+### Moving Average (MA) and Centered Moving Average(CMA)
 To smooth the data, calculate a 12 month moving average by starting at the 7th cell and computing the average for the intial 12 months of data as shown in Diagram 4. This process should be repeated for each subsequent 12 month period up until the 4th year. However, the formula cannot be dragged down to the end of the dataset bas it would include data beyond the last 12 months of the period being analysed as illustrated in Diagram 5.
 
-![Diagram 4]()
+![Diagram 4](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%204%20excel.png)
 
 Diagram 4
 
-![Diagram 5]()
+![Diagram 5](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%205%20excel.png)
 
 Diagram 5
 
+To calculate the centered moving average (CMA), average the surrounding MA values, centering the average around the current data point. In this case, '=AVERAGE(E9:E10)' is used, as shown in Diagram 6. Drag this formula down the column to apply it to all relevant cells, ensuring it does not extend beyond the last two MA values, as illustrated in Diagram 7. 
+
+![Diagram 6]()
+
+
+Diagram 6
+
+![Diagram 7]()
+
+
+Diagram 7
+
+Now the CMA values have been calculated, they can be plotted alongside the Sales values to reveal the true direction of the sales trend. Overlaying the CMA on the Sales plot makes it easier to distinguish long term trends from seasonal variations and short term fluctuations (Diagram 8).
+
+![Diagram 8]()
 
