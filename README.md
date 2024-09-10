@@ -55,8 +55,36 @@ Now the CMA values have been calculated, they can be plotted alongside the Sales
 
 Diagram 8
 
-As mentioned, the Centered Moving Average (CMA) removes irregularities and seasonality, leading to the creation of the 'St/It' column. To calculate the seasonality/irregularity components, divide the sales by the CMA using the formula. This formula is dragged down to the last CMA value, as shwon in Diagram 9. For example: cell G9 with the value '0.96', shows that in Year 1 month 7 the seasonality/irregularity components were 4% the baseline, which in this case in the CMA.
+As mentioned, the Centered Moving Average (CMA) removes irregularities and seasonality, leading to the creation of the 'St/It' column. To calculate the seasonality/irregularity components, divide the sales by the CMA using the formula. This formula is then applied to all relevant cells, as shown in Diagram 9. For example: in cell G9, the value '0.96', indicates that in Year 1, month 7, the seasonality and irregularity components were 4% below the baseline, which in this case is represented by the CMA.
 
 ![Diagram 9](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/st%2Cit%20forecasting%20excel.png)
 
 Diagram 9
+
+The next step involves removing irregularities and isolating the seasonal components to quantify them. This is done by averaging the St/It values for the same quarter across 4 years. For example, to calculate the seasonal component (St) for quarter 1 over four years, the formula =AVERAGE(G15,G27,G39) is used, which averages the values for year 2,3 and 4 because year 1 does not have an St/It value (see Diagram 10). 
+
+Alternatively, a more efficient way is to use the AVERAGEIF function. This allows averaging based on the specific month across all years.For example: the formula =AVERAGEIF($C$9:$C$44,O19,$G$9:$G$44) selects the entire range of the 'Month' column, the cell containing the month being averaged, and the St/It range (see Diagram 11). This formula is applied to all months, and the results are then transferred into the main data column, as shown in Diagram 12.
+
+![Diagram 10]()
+
+
+Diagram 10
+
+![Diagram 11]()
+
+
+
+Diagram 11
+
+
+![Diagram 12]()
+
+
+
+Diagram 12
+
+Now the focus is on deseasonalising the data. This is acheived by dividing the actual sales figures by the seasonal compoent (St) for each corresponding tiime period. The formula is applied to the first row and then dragged down through the entire dataset to adjust all sales values for seasonality. This is significant because it isolates the underlying trend in the data, illustrated in Diagram 13.
+
+![Diagram 13]()
+
+Diagram 13
