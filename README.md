@@ -57,4 +57,6 @@ Diagram 8
 
 As mentioned, the Centered Moving Average (CMA) removes irregularities and seasonality, leading to the creation of the 'St/It' column. To calculate the seasonality/irregularity components, divide the sales by the CMA using the formula. This formula is dragged down to the last CMA value, as shwon in Diagram 9. For example: cell G9 with the value '0.96', shows that in Year 1 month 7 the seasonality/irregularity components were 4% the baseline, which in this case in the CMA.
 
-![Diagram 9]()
+![Diagram 9](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/st%2Cit%20forecasting%20excel.png)
+
+Diagram 9
