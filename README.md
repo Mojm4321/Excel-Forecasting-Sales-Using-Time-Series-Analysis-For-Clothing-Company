@@ -10,6 +10,7 @@ The dataset includes monthly sales data over 4 years with the following variable
 
 Diagram 1
 
+
 ![Diagram 2](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/excel%20forecast%202.png)
 
 Diagram 2
@@ -17,7 +18,22 @@ Diagram 2
 ## Steps in Time Series Forecasting Process
 
 ### Plotting Time Series Data
-Begin by visualising the data through the selection of a line chart with markers. Then designate the series name as 'Sales' and highlight the column containing the historical sales data. This will produce a line chart that illustrates the sales figures, with markers representing each individual point (Diagram 3).
+Begin by visualising the data through the selection of a line chart with markers. Then designate the series name as 'Sales' and highlight the column containing the historical sales data. This will produce a line chart that illustrates the sales values, with markers representing each individual point (Diagram 3). 
 
-![Diagram 3]()
+To track both the year and month, the axis label range is selected to include both columns and data, to display the time periods on the chart's axes.
+
+![Diagram 3](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Line%20chart%20with%20markers%20Diagram%203.png)
+
+Diagram 3
+
+To smooth the data, calculate a 12 month moving average by starting at the 7th cell and computing the average for the intial 12 months of data as shown in Diagram 4. This process should be repeated for each subsequent 12 month period up until the 4th year. However, the formula cannot be dragged down to the end of the dataset bas it would include data beyond the last 12 months of the period being analysed as illustrated in Diagram 5.
+
+![Diagram 4]()
+
+Diagram 4
+
+![Diagram 5]()
+
+Diagram 5
+
 
