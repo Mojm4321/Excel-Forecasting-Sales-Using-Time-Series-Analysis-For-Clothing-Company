@@ -4,9 +4,20 @@
 This report uses time series analysis to forecast monthly sales for a clothing company. The data was created to capture trends, identify seasonal patterns, and generate reliable sales forecasts. Techniques such as moving averages, seasonal decomposition and deseasonalising the sales were applied to make accurate projections.
 
 ## Data Description
-The dataset includes monthly sales data over 4 years with the following variables: Sales(Yt) - monthly sales figures, MA(12) – 12-month moving average used to smooth fluctuations and reveal long term trends, Seasonal Component(St) - seasonal factors affecting monthly sales, Deseasonalised Sales(Yt/St) - sales values adjusted for seasonality to isolate the trend, Forecast - predicted sales values based on trend and seasonal adjustments (see Diagram 1 & Diagram 2)
+The dataset includes monthly sales data over 4 years with the following variables: Sales(Yt) - monthly sales figures, MA(12) – 12-month moving average used to smooth fluctuations and reveal long term trends, Seasonal Component(St) - seasonal factors affecting monthly sales, Deseasonalised Sales(Yt/St) - sales values adjusted for seasonality to isolate the trend, Forecast - predicted sales values based on trend and seasonal adjustments (see Diagram 1 & Diagram 2).
 
+![Diagram 1](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/excel%20forecast%201.png)
 
+Diagram 1
+
+![Diagram 2](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/excel%20forecast%202.png)
+
+Diagram 2
 
 ## Steps in Time Series Forecasting Process
+
+### Plotting Time Series Data
+Begin by visualising the data through the selection of a line chart with markers. Then designate the series name as 'Sales' and highlight the column containing the historical sales data. This will produce a line chart that illustrates the sales figures, with markers representing each individual point (Diagram 3).
+
+![Diagram 3]()
 
