@@ -39,17 +39,18 @@ Diagram 5
 
 To calculate the centered moving average (CMA), average the surrounding MA values, centering the average around the current data point. In this case, '=AVERAGE(E9:E10)' is used, as shown in Diagram 6. Drag this formula down the column to apply it to all relevant cells, ensuring it does not extend beyond the last two MA values, as illustrated in Diagram 7. 
 
-![Diagram 6]()
+![Diagram 6](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%206%20excel%20forecasting.png)
 
 
 Diagram 6
 
-![Diagram 7]()
+![Diagram 7](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%207%20excel%20forecasting.png)
 
 
 Diagram 7
 
 Now the CMA values have been calculated, they can be plotted alongside the Sales values to reveal the true direction of the sales trend. Overlaying the CMA on the Sales plot makes it easier to distinguish long term trends from seasonal variations and short term fluctuations (Diagram 8).
 
-![Diagram 8]()
+![Diagram 8](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%208%20excel%20forecasting.png)
+
 
