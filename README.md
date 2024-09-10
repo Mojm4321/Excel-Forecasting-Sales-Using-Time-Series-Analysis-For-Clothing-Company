@@ -65,20 +65,19 @@ The next step involves removing irregularities and isolating the seasonal compon
 
 Alternatively, a more efficient way is to use the AVERAGEIF function. This allows averaging based on the specific month across all years.For example: the formula =AVERAGEIF($C$9:$C$44,O19,$G$9:$G$44) selects the entire range of the 'Month' column, the cell containing the month being averaged, and the St/It range (see Diagram 11). This formula is applied to all months, and the results are then transferred into the main data column, as shown in Diagram 12.
 
-![Diagram 10]()
+![Diagram 10](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%2010%20excel%20forecasting.png)
 
 
 Diagram 10
 
-![Diagram 11]()
 
+![Diagram 11](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%2011%20excel%20forecast.png)
 
 
 Diagram 11
 
 
-![Diagram 12]()
-
+![Diagram 12](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2012%20forecast%20excel.png)
 
 
 Diagram 12
