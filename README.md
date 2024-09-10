@@ -1,4 +1,4 @@
-# Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company
+# Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company By Jolly Madamedon
 
 ## Introduction 
 This report uses time series analysis to forecast monthly sales for a clothing company. The data was created to capture trends, identify seasonal patterns, and generate reliable sales forecasts. Techniques such as moving averages, seasonal decomposition and deseasonalising the sales were applied to make accurate projections.
