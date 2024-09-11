@@ -134,3 +134,28 @@ To predict future clothing sales for the next year, the time period is extended 
 
 
 Diagram 19
+
+
+Diagram 20 shows a comparison between the actual sales, the forecasted sales, and the 12 month centered moving average (CMA). 
+
+![Diagram 20]()
+
+
+Diagram 20
+
+
+## Analysis of the Forecast
+
+### Accuracy of Forecast vs Actual Sales
+In the initial years, the forecasted sales track close to the actual sales, indicating that the model successfully captures the general trend and seasonal fluctuations in sales data. However, in Year 4, a slight divergence begins, especially in the latter months, where the forecast appears to understimate the sales, while the actual sales experience a noticeable dip and subsequent rise. This suggest that the model may struggle with capturing sudden shifts in sales patterns.
+
+### Variability in Sales
+There are sharp rises and falls evident in certain months. For instance, sales see an upward spike in October of Year 3, which could be attributed to a seasonal demand such as holiday shopping. October also marks the beginning of the winter shopping season, where consumers start purchasing warmer clothing such as coats, jackets and boots. 
+
+On the other hand, the noticeable dip in February of Year 4, might be linked to post-holiday slowdowns as consumers recover from heavy spending during the holiday season. Also, winter clothing is typically on clearance, and demand for new collections may not be popular, as many brands could be preparing for the launch of spring collections. 
+
+## Suggestion For Improvement (Model)
+The SARIMA model factors in both trend and seasonal components more thoroughly, which could potentially improve forecast accuracy during these high-variability periods.
+
+## Suggestion For Improvement (Company)
+Given the seasonal spikes, the company could plan its inventory accordingly, stocking up before high demand periods and reducing inventory after. Also, capitalising on predictable seasonal trends, for example: offering discounts right before anticipated peaks to drive sales up even more.
