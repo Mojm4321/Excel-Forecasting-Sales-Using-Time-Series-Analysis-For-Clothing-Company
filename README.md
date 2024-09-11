@@ -101,7 +101,11 @@ Diagram 14
 
 Diagram 15
 
-The formula to calculate the trend component will be =254.734368511233+1.2363037537931*(t).The formula is applied to the first row and then dragged down through the entire Tt column as displayed in Diagram 16.
+The formula to calculate the trend component will be =254.734368511233(coeff for intercept)+1.2363037537931(coeff for slope)*(t).The formula is applied to the first row and then dragged down through the entire Tt column as displayed in Diagram 16.
 
-![Diagram 16]()
+![Diagram 16](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2016%20excel%20forecasting.png)
+
+Diagram 16
+
+
 
