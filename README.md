@@ -107,5 +107,25 @@ The formula to calculate the trend component will be =254.734368511233(coeff for
 
 Diagram 16
 
+With the key components now generated, forecasting can be completed based on historical data for the avaliable time period. Forecasted sales are calculated by multiplying the Seasonal component (St) with the Trend component (Tt) (as shown in Diagram 17). This allowing for a comparison of the forecasted values with the actual sales data to evaluate the accuracy and strength of the model (see Diagram 18).
 
 
+![Diagram 17]()
+
+
+Diagram 17
+
+
+![Diagram 18]()
+
+
+Diagram 18
+
+
+To predict future clothing sales for the next year, the time period is extended along with the months. The seasonal component column (St) automatically updates using the AVERAGEIF function, and the trend component column can be extended by applying the formula '=254.734368511233(coeff for intercept)+1.2363037537931(coeff for slope)*(t)'. With these two columns columns complete, the forecast for Year 5 can be completed. The forecasted sales are calculated by multiplying the year 5 St values by the corresponding Tt values, as illustrated in Diagram 19.
+
+
+![Diagram 19]()
+
+
+Diagram 19
