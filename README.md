@@ -1,7 +1,7 @@
 # Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company By Jolly Madamedon
 
 ## Introduction 
-This report uses time series analysis to forecast monthly sales for a clothing company. The data was created to capture trends, identify seasonal patterns, and generate reliable sales forecasts. 
+This report applies time series analysis to forecast monthly sales for a clothing company. The goal is to capture trends, identify seasonal patterns, and generate reliable sales forecasts using historical data. 
 
 ## Data Description
 The dataset includes monthly sales data over 4 years with the following variables: Sales(Yt) - monthly sales figures, MA(12) – 12-month moving average used to smooth fluctuations and reveal long term trends, Seasonal Component(St) - seasonal factors affecting monthly sales, Deseasonalised Sales(Yt/St) - sales values adjusted for seasonality to isolate the trend, Forecast - predicted sales values based on trend and seasonal adjustments (see Diagram 1 & Diagram 2).
@@ -49,19 +49,21 @@ Diagram 6
 
 Diagram 7
 
-Now the CMA values have been calculated, they can be plotted alongside the Sales values to reveal the true direction of the sales trend. Overlaying the CMA on the Sales plot makes it easier to distinguish long term trends from seasonal variations and short term fluctuations (Diagram 8).
+Once the CMA values have been calculated, they can be plotted alongside the Sales values to reveal the true direction of the sales trend. Overlaying the CMA on the Sales plot makes it easier to distinguish long term trends from seasonal variations and short term fluctuations (Diagram 8).
 
 ![Diagram 8](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%208%20excel%20forecasting.png)
 
 Diagram 8
 
-As mentioned, the Centered Moving Average (CMA) removes irregularities and seasonality, leading to the creation of the 'St/It' column. To calculate the seasonality/irregularity components, divide the sales by the CMA using the formula. This formula is then applied to all relevant cells, as shown in Diagram 9. For example: in cell G9, the value '0.96', indicates that in Year 1, month 7, the seasonality and irregularity components were 4% below the baseline, which in this case is represented by the CMA.
+### Seasonal Component (St)
+As the CMA removes irregularities and seasonality, the 'St/It' column is created to capture. To seasonality and irregularity components. To calculate this, divide the sales by the CMA. This formula is applied to all relevant cells, as shown in Diagram 9. For example: in cell G9, the value '0.96', indicates that in Year 1, month 7, the seasonality and irregularity components were 4% below the baseline, which in this case is represented by the CMA.
 
 ![Diagram 9](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/st%2Cit%20forecasting%20excel.png)
 
 Diagram 9
 
-The next step involves removing irregularities and isolating the seasonal components to quantify them. This is done by averaging the St/It values for the same quarter across 4 years. For example, to calculate the seasonal component (St) for quarter 1 over four years, the formula =AVERAGE(G15,G27,G39) is used, which averages the values for year 2,3 and 4 because year 1 does not have an St/It value (see Diagram 10). 
+### Quantifying Seasonal Components
+Next, irregularities are removing and iseasonal components are isolated. This is done by averaging the St/It values for the same quarter across 4 years. For example, to calculate the seasonal component (St) for quarter 1 over four years, the formula =AVERAGE(G15,G27,G39) is used, which averages the values for year 2,3 and 4 because year 1 does not have an St/It value (see Diagram 10). 
 
 Alternatively, a more efficient way is to use the AVERAGEIF function. This allows averaging based on the specific month across all years.For example: the formula =AVERAGEIF($C$9:$C$44,O19,$G$9:$G$44) selects the entire range of the 'Month' column, the cell containing the month being averaged, and the St/It range (see Diagram 11). This formula is applied to all months, and the results are then transferred into the main data column, as shown in Diagram 12.
 
@@ -82,12 +84,14 @@ Diagram 11
 
 Diagram 12
 
-Now the focus is on deseasonalising the data. This is acheived by dividing the actual sales figures by the seasonal component (St) for each corresponding tiime period. The formula is applied to the first row and then dragged down through the entire Yt/St column to adjust all sales values for seasonality. This is significant because it isolates the underlying trend in the data, illustrated in Diagram 13.
+### Deseasonalising Sales
+Deseasonalising clothing sales data is achieved by dividing the actual sales figures by the seasonal component (St) for each time period. The formula is applied to the first row and then dragged down through the entire Yt/St column to adjust all sales values for seasonality. This is significant because it isolates the underlying trend in the data, illustrated in Diagram 13.
 
 ![Diagram 13](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2013%20forecast%20excel.png)
 
 Diagram 13
 
+### Trend Calculation Using Linear Regression 
 The next step is to run a simple linear regression. Here the deseasonalised sales range will be the Y variable and the t will be the X variable, shown in Diagram 14. By fitting this regression, the coefficients of the intercept and slope are generated and used to create the calculate the trend component as illustrated in Diagram 15.
 
 ![Diagram 14](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/diagram%2014%20forecast%20excel%201.png)
@@ -107,25 +111,26 @@ The formula to calculate the trend component will be =254.734368511233(coeff for
 
 Diagram 16
 
+### Forecasting Future Sales
 With the key components now generated, forecasting can be completed based on historical data for the avaliable time period. Forecasted sales are calculated by multiplying the Seasonal component (St) with the Trend component (Tt) (as shown in Diagram 17). This allowing for a comparison of the forecasted values with the actual sales data to evaluate the accuracy and strength of the model (see Diagram 18).
 
 
-![Diagram 17]()
+![Diagram 17](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2017%20forecast%20excel.png)
 
 
 Diagram 17
 
 
-![Diagram 18]()
+![Diagram 18](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2018%20forecast%20excel.png)
 
 
 Diagram 18
 
-
+### Forecasting For Year 5
 To predict future clothing sales for the next year, the time period is extended along with the months. The seasonal component column (St) automatically updates using the AVERAGEIF function, and the trend component column can be extended by applying the formula '=254.734368511233(coeff for intercept)+1.2363037537931(coeff for slope)*(t)'. With these two columns columns complete, the forecast for Year 5 can be completed. The forecasted sales are calculated by multiplying the year 5 St values by the corresponding Tt values, as illustrated in Diagram 19.
 
 
-![Diagram 19]()
+![Diagram 19](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2019%20forecast%20excel.png)
 
 
 Diagram 19
