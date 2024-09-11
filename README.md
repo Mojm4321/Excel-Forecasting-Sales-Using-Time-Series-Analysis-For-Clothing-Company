@@ -82,7 +82,7 @@ Diagram 11
 
 Diagram 12
 
-Now the focus is on deseasonalising the data. This is acheived by dividing the actual sales figures by the seasonal compoent (St) for each corresponding tiime period. The formula is applied to the first row and then dragged down through the entire dataset to adjust all sales values for seasonality. This is significant because it isolates the underlying trend in the data, illustrated in Diagram 13.
+Now the focus is on deseasonalising the data. This is acheived by dividing the actual sales figures by the seasonal component (St) for each corresponding tiime period. The formula is applied to the first row and then dragged down through the entire Yt/St column to adjust all sales values for seasonality. This is significant because it isolates the underlying trend in the data, illustrated in Diagram 13.
 
 ![Diagram 13](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2013%20forecast%20excel.png)
 
@@ -100,3 +100,8 @@ Diagram 14
 
 
 Diagram 15
+
+The formula to calculate the trend component will be =254.734368511233+1.2363037537931*(t).The formula is applied to the first row and then dragged down through the entire Tt column as displayed in Diagram 16.
+
+![Diagram 16]()
+
