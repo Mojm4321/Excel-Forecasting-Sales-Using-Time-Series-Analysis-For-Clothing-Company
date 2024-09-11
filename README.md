@@ -155,7 +155,7 @@ There are sharp rises and falls evident in certain months. For instance, sales s
 On the other hand, the noticeable dip in February of Year 4, might be linked to post-holiday slowdowns as consumers recover from heavy spending during the holiday season. Also, winter clothing is typically on clearance, and demand for new collections may not be popular, as many brands could be preparing for the launch of spring collections. 
 
 ## Suggestion For Improvement (Model)
-The SARIMA model factors in both trend and seasonal components more thoroughly, which could potentially improve forecast accuracy during these high-variability periods.
+The SARIMA model, which accounts for both trend and seasonal components more thoroughly, might be the better solution for forecasting the sales for the clothing company.
 
 ## Suggestion For Improvement (Company)
 Given the seasonal spikes, the company could plan its inventory accordingly, stocking up before high demand periods and reducing inventory after. Also, capitalising on predictable seasonal trends, for example: offering discounts right before anticipated peaks to drive sales up even more.
