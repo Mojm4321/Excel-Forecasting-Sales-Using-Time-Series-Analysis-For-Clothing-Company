@@ -138,7 +138,7 @@ Diagram 19
 
 Diagram 20 shows a comparison between the actual sales, the forecasted sales, and the 12 month centered moving average (CMA). 
 
-![Diagram 20]()
+![Diagram 20](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2020%20forecast%20excel.png)
 
 
 Diagram 20
