@@ -87,3 +87,16 @@ Now the focus is on deseasonalising the data. This is acheived by dividing the a
 ![Diagram 13](https://github.com/Mojm4321/Excel-Forecasting-Sales-Using-Time-Series-Analysis-For-Clothing-Company/blob/main/Diagram%2013%20forecast%20excel.png)
 
 Diagram 13
+
+The next step is to run a simple linear regression. Here the deseasonalised sales range will be the Y variable and the t will be the X variable, shown in Diagram 14. By fitting this regression, the coefficients of the intercept and slope are generated and used to create the calculate the trend component as illustrated in Diagram 15.
+
+![Diagram 14]()
+
+
+Diagram 14
+
+
+![Diagram 15]()
+
+
+Diagram 15
